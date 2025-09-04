@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raviraj Prajapat - AI Architect & Innovation Leader</title>
+    <meta name="description" content="Seasoned AI Leader with 10+ years in foundational AI research, agentic AI, and deep learning. Successfully built AI products for 200+ enterprises.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Color Variables */
+            --color-slate-50: #f8fafc; --color-slate-100: #f1f5f9; --color-slate-200: #e2e8f0; --color-slate-300: #cbd5e1;
+            --color-slate-400: #94a3b8; --color-slate-500: #64748b; --color-slate-600: #475569; --color-slate-700: #334155;
+            --color-slate-800: #1e293b; --color-slate-900: #0f172a;
+            --color-blue-50: #eff6ff; --color-blue-100: #dbeafe; --color-blue-200: #bfdbfe; --color-blue-300: #93c5fd;
+            --color-blue-400: #60a5fa; --color-blue-500: #3b82f6; --color-blue-600: #2563eb; --color-blue-700: #1d4ed8;
+            --color-blue-800: #1e40af; --color-blue-900: #1e3a8a;
+            --color-indigo-50: #eef2ff; --color-indigo-100: #e0e7ff; --color-indigo-200: #c7d2fe; --color-indigo-300: #a5b4fc;
+            --color-indigo-400: #818cf8; --color-indigo-500: #6366f1; --color-indigo-600: #4f46e5; --color-indigo-700: #4338ca;
+            --color-indigo-800: #3730a3; --color-indigo-900: #312e81;
+            --color-purple-50: #faf5ff; --color-purple-100: #f3e8ff; --color-purple-200: #e9d5ff; --color-purple-300: #d8b4fe;
+            --color-purple-400: #c084fc; --color-purple-500: #a855f7; --color-purple-600: #9333ea; --color-purple-700: #7c3aed;
+            --color-purple-800: #6b21a8; --color-purple-900: #581c87;
+            --color-green-50: #f0fdf4; --color-green-100: #dcfce7; --color-green-200: #bbf7d0; --color-green-300: #86efac;
+            --color-green-400: #4ade80; --color-green-500: #22c55e; --color-green-600: #16a34a; --color-green-700: #15803d;
+            --color-green-800: #166534; --color-green-900: #14532d;
+            --color-orange-50: #fff7ed; --color-orange-100: #ffedd5; --color-orange-200: #fed7aa; --color-orange-300: #fdba74;
+            --color-orange-400: #fb923c; --color-orange-500: #f97316; --color-orange-600: #ea580c; --color-orange-700: #c2410c;
+            --color-orange-800: #9a3412; --color-orange-900: #7c2d12;
+            --color-red-50: #fef2f2; --color-red-100: #fee2e2; --color-red-200: #fecaca; --color-red-300: #fca5a5;
+            --color-red-400: #f87171; --color-red-500: #ef4444; --color-red-600: #dc2626; --color-red-700: #b91c1c;
+            --color-red-800: #991b1b; --color-red-900: #7f1d1d;
+            --color-emerald-50: #ecfdf5; --color-emerald-100: #d1fae5; --color-emerald-200: #a7f3d0; --color-emerald-300: #6ee7b7;
+            --color-emerald-400: #34d399; --color-emerald-500: #10b981; --color-emerald-600: #059669; --color-emerald-700: #047857;
+            --color-emerald-800: #065f46; --color-emerald-900: #064e3b;
+            --color-violet-50: #f5f3ff; --color-violet-100: #ede9fe; --color-violet-200: #ddd6fe; --color-violet-300: #c4b5fd;
+            --color-violet-400: #a78bfa; --color-violet-500: #8b5cf6; --color-violet-600: #7c3aed; --color-violet-700: #6d28d9;
+            --color-violet-800: #5b21b6; --color-violet-900: #4c1d95;
+            --spacing-1: 0.25rem; --spacing-2: 0.5rem; --spacing-3: 0.75rem; --spacing-4: 1rem; --spacing-5: 1.25rem;
+            --spacing-6: 1.5rem; --spacing-8: 2rem; --spacing-10: 2.5rem; --spacing-12: 3rem; --spacing-16: 4rem; --spacing-20: 5rem;
+            --radius-sm: 0.125rem; --radius: 0.375rem; --radius-md: 0.5rem; --radius-lg: 0.75rem; --radius-xl: 1rem;
+            --radius-2xl: 1.5rem; --radius-3xl: 1.75rem; --radius-full: 9999px;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6; color: var(--color-slate-700);
+            background: linear-gradient(135deg, var(--color-slate-50) 0%, var(--color-blue-50) 50%, var(--color-indigo-50) 100%);
+            min-height: 100vh;
+        }
+        
+        .main-container {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--color-slate-50) 0%, var(--color-blue-50) 50%, var(--color-indigo-50) 100%);
+        }
+        
+        .hero-section {
+            position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            padding: var(--spacing-4); overflow: hidden;
+        }
+        
+        .hero-bg { position: absolute; inset: 0; overflow: hidden; }
+        
+        .hero-bg-element {
+            position: absolute; border-radius: 50%; filter: blur(80px); animation: pulse 3s ease-in-out infinite;
+        }
+        
+        .hero-bg-element:nth-child(1) {
+            top: -10rem; right: -10rem; width: 20rem; height: 20rem; background: rgba(96, 165, 250, 0.2);
+        }
+        
+        .hero-bg-element:nth-child(2) {
+            bottom: -10rem; left: -10rem; width: 20rem; height: 20rem; background: rgba(129, 140, 248, 0.2);
+            animation-delay: 1s;
+        }
+        
+        .hero-bg-element:nth-child(3) {
+            top: 50%; left: 50%; transform: translate(-50%, -50%); width: 24rem; height: 24rem;
+            background: rgba(168, 85, 247, 0.1); animation-delay: 0.5s;
+        }
+        
+        .hero-content {
+            position: relative; z-index: 10; text-align: center; max-width: 64rem; margin: 0 auto;
+            opacity: 0; transform: translateY(2.5rem); animation: fadeInUp 1s ease-out forwards;
+        }
+        
+        .badge {
+            display: inline-flex; align-items: center; padding: var(--spacing-2) var(--spacing-4);
+            margin-bottom: var(--spacing-4); font-size: 0.875rem; font-weight: 500;
+            background: rgba(255, 255, 255, 0.5); backdrop-filter: blur(10px);
+            border: 1px solid var(--color-blue-200); border-radius: var(--radius-full); color: var(--color-slate-700);
+        }
+        
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 5rem); font-weight: 800;
+            background: linear-gradient(90deg, var(--color-blue-600), var(--color-purple-600), var(--color-indigo-600));
+            -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+            margin-bottom: var(--spacing-6); line-height: 1.1;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 3vw, 1.5rem); color: var(--color-slate-600); margin-bottom: var(--spacing-8);
+            line-height: 1.5; max-width: 48rem; margin-left: auto; margin-right: auto;
+        }
+        
+        .hero-subtitle .highlight { font-weight: 600; color: var(--color-blue-600); }
+        
+        .hero-buttons {
+            display: flex; flex-direction: column; gap: var(--spacing-4); justify-content: center;
+            margin-bottom: var(--spacing-12);
+        }
+        
+        @media (min-width: 640px) { .hero-buttons { flex-direction: row; } }
+        
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center; padding: var(--spacing-3) var(--spacing-8);
+            font-size: 1rem; font-weight: 500; border-radius: var(--radius-full); text-decoration: none;
+            transition: all 0.3s ease; cursor: pointer; border: none; position: relative; overflow: hidden;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(90deg, var(--color-blue-600), var(--color-indigo-600)); color: white;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(90deg, var(--color-blue-700), var(--color-indigo-700));
+            box-shadow: var(--shadow-xl); transform: translateY(-1px);
+        }
+        
+        .btn-outline {
+            border: 2px solid var(--color-blue-200); background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px); color: var(--color-slate-700); box-shadow: var(--shadow-lg);
+        }
+        
+        .btn-outline:hover {
+            border-color: var(--color-blue-300); box-shadow: var(--shadow-xl); transform: translateY(-1px);
+        }
+        
+        .btn-icon { width: 1.25rem; height: 1.25rem; margin-right: var(--spacing-2); }
+        
+        .chevron-down {
+            width: 2rem; height: 2rem; margin: 0 auto; color: var(--color-slate-400);
+            cursor: pointer; animation: bounce 2s infinite;
+        }
+        
+        .section { padding: var(--spacing-20) var(--spacing-4); }
+        .section-bg { background: rgba(255, 255, 255, 0.3); backdrop-filter: blur(10px); }
+        .container { max-width: 72rem; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: var(--spacing-16); }
+        
+        .section-title {
+            font-size: 2.5rem; font-weight: 700; color: var(--color-slate-800); margin-bottom: var(--spacing-4);
+        }
+        
+        .section-subtitle {
+            font-size: 1.125rem; color: var(--color-slate-600); max-width: 48rem; margin: 0 auto;
+        }
+        
+        .grid { display: grid; gap: var(--spacing-6); }
+        .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+        
+        @media (max-width: 1024px) { .grid-cols-4 { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 768px) { .grid-cols-2, .grid-cols-3, .grid-cols-4 { grid-template-columns: 1fr; } }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg); overflow: hidden; transition: all 0.3s ease; border: 0;
+        }
+        
+        .card:hover { box-shadow: var(--shadow-xl); transform: translateY(-0.25rem); }
+        .card-header { padding: var(--spacing-6); padding-bottom: var(--spacing-4); }
+        .card-content { padding: var(--spacing-6); padding-top: 0; }
+        
+        .card-title {
+            font-size: 1.125rem; font-weight: 600; color: var(--color-slate-800);
+            margin-bottom: var(--spacing-2); display: flex; align-items: center;
+        }
+        
+        .card-description { color: var(--color-slate-600); margin-bottom: var(--spacing-4); }
+        .icon { width: 1.5rem; height: 1.5rem; margin-right: var(--spacing-2); }
+        
+        .icon-lg {
+            width: 2.5rem; height: 2.5rem; padding: var(--spacing-3); border-radius: var(--radius-lg);
+            margin-right: var(--spacing-3); color: white; display: flex; align-items: center; justify-content: center;
+        }
+        
+        .icon-circle {
+            width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            margin: 0 auto var(--spacing-4); color: white;
+        }
+        
+        .icon-sm { width: 1.25rem; height: 1.25rem; }
+        .bg-gradient-blue { background: linear-gradient(135deg, var(--color-blue-50), var(--color-indigo-50)); }
+        .bg-gradient-green { background: linear-gradient(135deg, var(--color-green-50), var(--color-emerald-50)); }
+        .bg-gradient-purple { background: linear-gradient(135deg, var(--color-purple-50), var(--color-violet-50)); }
+        .bg-gradient-orange { background: linear-gradient(135deg, var(--color-orange-50), var(--color-red-50)); }
+        .icon-gradient-blue { background: linear-gradient(135deg, var(--color-blue-500), var(--color-indigo-500)); }
+        .icon-gradient-green { background: linear-gradient(135deg, var(--color-green-500), var(--color-emerald-500)); }
+        .icon-gradient-purple { background: linear-gradient(135deg, var(--color-purple-500), var(--color-violet-500)); }
+        .icon-gradient-orange { background: linear-gradient(135deg, var(--color-orange-500), var(--color-red-500)); }
+        
+        .skill-badge {
+            display: inline-block; padding: var(--spacing-1) var(--spacing-3); margin: var(--spacing-1);
+            font-size: 0.875rem; font-weight: 500; border-radius: var(--radius); transition: all 0.2s ease;
+        }
+        
+        .skill-badge:hover { transform: scale(1.05); }
+        .badge-blue { background: var(--color-blue-100); color: var(--color-blue-800); }
+        .badge-green { background: var(--color-green-100); color: var(--color-green-800); }
+        .badge-purple { background: var(--color-purple-100); color: var(--color-purple-800); }
+        .badge-orange { background: var(--color-orange-100); color: var(--color-orange-800); }
+        
+        .metric-badge {
+            background: linear-gradient(90deg, var(--color-blue-500), var(--color-indigo-500)); color: white;
+            padding: var(--spacing-1) var(--spacing-2); border-radius: var(--radius); font-size: 0.875rem;
+            font-weight: 500; margin: var(--spacing-1); display: inline-block;
+        }
+        
+        .experience-card { margin-bottom: var(--spacing-8); }
+        
+        .experience-header {
+            display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--spacing-4);
+            flex-wrap: wrap; gap: var(--spacing-4);
+        }
+        
+        .experience-title { font-size: 1.25rem; font-weight: 600; color: var(--color-slate-800); margin: 0; }
+        .experience-company { font-size: 1.125rem; color: var(--color-slate-600); margin: 0; }
+        .experience-details { display: grid; gap: var(--spacing-4); }
+        
+        @media (min-width: 768px) { .experience-details { grid-template-columns: repeat(2, 1fr); } }
+        
+        .experience-list { list-style: none; padding: 0; }
+        
+        .experience-list li {
+            font-size: 0.875rem; color: var(--color-slate-600); margin-bottom: var(--spacing-1);
+            position: relative; padding-left: var(--spacing-4);
+        }
+        
+        .experience-list li:before {
+            content: "•"; position: absolute; left: 0; color: var(--color-blue-500); font-weight: bold;
+        }
+        
+        .contact-grid {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--spacing-8); margin-bottom: var(--spacing-8);
+        }
+        
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; gap: var(--spacing-6); } }
+        
+        .contact-item { display: flex; flex-direction: column; align-items: center; text-align: center; }
+        
+        .contact-link { color: var(--color-blue-600); text-decoration: none; transition: color 0.2s ease; }
+        .contact-link:hover { color: var(--color-blue-700); }
+        .contact-link.green { color: var(--color-green-600); }
+        .contact-link.green:hover { color: var(--color-green-700); }
+        .contact-link.purple { color: var(--color-purple-600); }
+        .contact-link.purple:hover { color: var(--color-purple-700); }
+        
+        .separator { width: 100%; height: 1px; background: var(--color-slate-200); margin: var(--spacing-8) 0; }
+        .location { display: flex; align-items: center; justify-content: center; color: var(--color-slate-600); }
+        
+        .footer {
+            padding: var(--spacing-8) var(--spacing-4); background: var(--color-slate-800);
+            color: white; text-align: center;
+        }
+        
+        .footer p { color: var(--color-slate-300); margin: 0; }
+        
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.7; } }
+        @keyframes bounce {
+            0%, 20%, 53%, 80%, 100% { transform: translate3d(0, 0, 0); }
+            40%, 43% { transform: translate3d(0, -15px, 0); }
+            70% { transform: translate3d(0, -5px, 0); }
+            90% { transform: translate3d(0, -2px, 0); }
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        @media (max-width: 768px) {
+            .section-title { font-size: 2rem; }
+            .card-header, .card-content { padding: var(--spacing-4); }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg">
+                <div class="hero-bg-element"></div>
+                <div class="hero-bg-element"></div>
+                <div class="hero-bg-element"></div>
+            </div>
+
+            <div class="hero-content">
+                <div>
+                    <span class="badge">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                        AI Architect & Innovation Leader
+                    </span>
+                </div>
+                
+                <h1 class="hero-title">Raviraj Prajapat</h1>
+                
+                <p class="hero-subtitle">
+                    Seasoned AI Leader with 10+ years in foundational AI research, agentic AI, and deep learning.
+                    <br />
+                    <span class="highlight">Successfully built AI products for 200+ enterprises.</span>
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        View AI Products
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Get In Touch
+                    </a>
+                </div>
+
+                <div onclick="scrollToSection('about')">
+                    <svg class="chevron-down" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">
+                        A fast-track career progression from Data Scientist to Tech Lead to AI Architect to Head of AI 
+                        in recognition of consistent high performance, technical innovation, and leadership.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-4">
+                    <div class="card">
+                        <div class="card-content" style="text-align: center;">
+                            <div class="icon-circle icon-gradient-blue">
+                                <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="card-title" style="justify-content: center; font-size: 1rem; margin-bottom: var(--spacing-2);">Team Leadership</h3>
+                            <p style="font-size: 0.875rem; color: var(--color-slate-600);">Scaled AI/ML team from 1 to 18 professionals with 85%+ retention rate</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content" style="text-align: center;">
+                            <div class="icon-circle icon-gradient-green">
+                                <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                </svg>
+                            </div>
+                            <h3 class="card-title" style="justify-content: center; font-size: 1rem; margin-bottom: var(--spacing-2);">Enterprise Impact</h3>
+                            <p style="font-size: 0.875rem; color: var(--color-slate-600);">Built AI products for 200+ enterprises across multiple industries</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content" style="text-align: center;">
+                            <div class="icon-circle icon-gradient-purple">
+                                <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="card-title" style="justify-content: center; font-size: 1rem; margin-bottom: var(--spacing-2);">Fast-track Career</h3>
+                            <p style="font-size: 0.875rem; color: var(--color-slate-600);">Progressed from Data Scientist to Head of AI in recognition of innovation</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-content" style="text-align: center;">
+                            <div class="icon-circle icon-gradient-orange">
+                                <svg class="icon-sm" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="card-title" style="justify-content: center; font-size: 1rem; margin-bottom: var(--spacing-2);">Patent Pending</h3>
+                            <p style="font-size: 0.875rem; color: var(--color-slate-600);">Led development of patent pending technologies and core IP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <p class="section-subtitle">
+                        Comprehensive skill set spanning the entire AI and ML ecosystem
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-4">
+                    <div class="card bg-gradient-blue">
+                        <div class="card-header">
+                            <div class="card-title" style="color: var(--color-blue-700);">
+                                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                                </svg>
+                                AI Stack
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div>
+                                <span class="skill-badge badge-blue">Generative & Agentic AI</span>
+                                <span class="skill-badge badge-blue">LLMs & Transformers</span>
+                                <span class="skill-badge badge-blue">LangChain & LangGraph</span>
+                                <span class="skill-badge badge-blue">CrewAI</span>
+                                <span class="skill-badge badge-blue">Deep Learning</span>
+                                <span class="skill-badge badge-blue">NLP & Computer Vision</span>
+                                <span class="skill-badge badge-blue">LangFuse Observability</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gradient-green">
+                        <div class="card-header">
+                            <div class="card-title" style="color: var(--color-green-700);">
+                                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                </svg>
+                                Tech Stack
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div>
+                                <span class="skill-badge badge-green">Python & PyTorch</span>
+                                <span class="skill-badge badge-green">Kubernetes & Kafka</span>
+                                <span class="skill-badge badge-green">Vector DBs (Qdrant, Weaviate)</span>
+                                <span class="skill-badge badge-green">RAG Systems</span>
+                                <span class="skill-badge badge-green">NoSQL Databases</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gradient-purple">
+                        <div class="card-header">
+                            <div class="card-title" style="color: var(--color-purple-700);">
+                                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10"></path>
+                                </svg>
+                                MLOps
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div>
+                                <span class="skill-badge badge-purple">GCP & AWS</span>
+                                <span class="skill-badge badge-purple">SageMaker & Vertex AI</span>
+                                <span class="skill-badge badge-purple">Bedrock</span>
+                                <span class="skill-badge badge-purple">GPU Zero-Scaling</span>
+                                <span class="skill-badge badge-purple">Prometheus & Grafana</span>
+                                <span class="skill-badge badge-purple">MLflow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-gradient-orange">
+                        <div class="card-header">
+                            <div class="card-title" style="color: var(--color-orange-700);">
+                                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                </svg>
+                                Architecture
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div>
+                                <span class="skill-badge badge-orange">Microservices</span>
+                                <span class="skill-badge badge-orange">Event-Driven Architecture</span>
+                                <span class="skill-badge badge-orange">System Design</span>
+                                <span class="skill-badge badge-orange">Multi-tenant AI</span>
+                                <span class="skill-badge badge-orange">API Gateway</span>
+                                <span class="skill-badge badge-orange">Serverless</span>
+                                <span class="skill-badge badge-orange">Redis Caching</span>
+                                <span class="skill-badge badge-orange">High Availability</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Core AI Products</h2>
+                    <p class="section-subtitle">
+                        Innovative AI solutions that drive business transformation
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <div class="icon-lg icon-gradient-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database w-6 h-6" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+                                </div>
+                                Sirion AE
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">Highly scalable data extraction engine processing 1M+ documents daily with 95% accuracy using NER, Semantic search, SLM, LLMs and Computer Vision.</p>
+                            <div>
+                                <span class="metric-badge">1M+ docs/day</span>
+                                <span class="metric-badge">95% accuracy</span>
+                                <span class="metric-badge">1100+ data points</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <div class="icon-lg icon-gradient-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-brain w-6 h-6" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M19.938 10.5a4 4 0 0 1 .585.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M19.967 17.484A4 4 0 0 1 18 18"></path></svg>
+                                </div>
+                                Ask Sirion Agent
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">AI Agent for conversational document search with insights generation, honoring access controls, multi-tenancy, and data privacy.</p>
+                            <div>
+                                <span class="metric-badge">Multi-tenant</span>
+                                <span class="metric-badge">Privacy-first</span>
+                                <span class="metric-badge">Transparent reasoning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <div class="icon-lg icon-gradient-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target w-6 h-6" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                                </div>
+                                Auto Redlining Agent
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">Domain expert AI Agent for automatic negotiation and risk highlighting with 90% accuracy in complex legal domains using open source LLMs.</p>
+                            <div>
+                                <span class="metric-badge">90% accuracy</span>
+                                <span class="metric-badge">Legal expertise</span>
+                                <span class="metric-badge">Open source LLMs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <div class="icon-lg icon-gradient-blue">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code w-6 h-6" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                                </div>
+                                Agentic AI Framework
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">No-code/Low-code platform for building UI, workflows and AI Agents for faster product iteration and high development throughput.</p>
+                            <div>
+                                <span class="metric-badge">No-code</span>
+                                <span class="metric-badge">Scalable</span>
+                                <span class="metric-badge">Fast iteration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section section-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Journey</h2>
+                </div>
+
+                <div>
+                    <div class="card experience-card">
+                        <div class="card-header">
+                            <div class="experience-header">
+                                <div style="display: flex; align-items: center;">
+                                    <!-- <svg class="icon" style="color: var(--color-blue-600); margin-right: var(--spacing-3);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V4a2 2 0 00-2-2H8a2 2 0 00-2 2v2m8 0V6a2 2 0 002 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+                                    </svg> -->
+                                    <svg class="icon" 
+     style="color: var(--color-blue-600); margin-right: var(--spacing-3);" 
+     fill="none" stroke="currentColor" 
+     viewBox="0 0 24 24" 
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Suitcase body -->
+  <rect x="4" y="8" width="16" height="12" rx="2" ry="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Handle -->
+  <path d="M9 8V6a3 3 0 0 1 6 0v2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Divider line -->
+  <line x1="4" y1="14" x2="20" y2="14" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+
+                                    <div>
+                                        <h3 class="experience-title">Head of AI (Tech)</h3>
+                                        <p class="experience-company">Sirionlabs India • 05/2019 - Present • Gurugram, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <p class="card-description">
+                                Leading company-wide AI vision and strategic roadmap, partnering with CEO, Chief of Product, 
+                                and Legal leadership for market leadership and revenue growth.
+                            </p>
+                            <div class="experience-details">
+                                <div>
+                                    <h4 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: var(--spacing-2);">Strategic Leadership</h4>
+                                    <ul class="experience-list">
+                                        <li>Scaled AI/ML team from 1 to 18 professionals</li>
+                                        <li>85%+ team retention rate</li>
+                                        <li>End-to-end R&D function management</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: var(--spacing-2);">Technical Innovation</h4>
+                                    <ul class="experience-list">
+                                        <li>Patent pending technologies</li>
+                                        <li>GPU-based distributed training</li>
+                                        <li>Auto data validation platform</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card experience-card">
+                        <div class="card-header">
+                            <div style="display: flex; align-items: center;">
+                                <svg class="icon" 
+     style="color: var(--color-green-600); margin-right: var(--spacing-3);" 
+     fill="none" stroke="currentColor" 
+     viewBox="0 0 24 24" 
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Suitcase body -->
+  <rect x="4" y="8" width="16" height="12" rx="2" ry="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Handle -->
+  <path d="M9 8V6a3 3 0 0 1 6 0v2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Divider line -->
+  <line x1="4" y1="14" x2="20" y2="14" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+                                <div>
+                                    <h3 class="experience-title">Research Engineer (R&D)</h3>
+                                    <p class="experience-company">Maruti Suzuki India Ltd • 09/2018 - 05/2020 • Gurugram, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <ul class="experience-list">
+                                <li>Developed predictive maintenance algorithms for vehicle clutch assembly</li>
+                                <li>Binary classification models for early battery failure prediction</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card experience-card">
+                        <div class="card-header">
+                            <div style="display: flex; align-items: center;">
+                                <svg class="icon" 
+     style="color: var(--color-purple-600); margin-right: var(--spacing-3);" 
+     fill="none" stroke="currentColor" 
+     viewBox="0 0 24 24" 
+     xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Suitcase body -->
+  <rect x="4" y="8" width="16" height="12" rx="2" ry="2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Handle -->
+  <path d="M9 8V6a3 3 0 0 1 6 0v2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Divider line -->
+  <line x1="4" y1="14" x2="20" y2="14" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+                                <div>
+                                    <h3 class="experience-title">Senior Engineer (R&D)</h3>
+                                    <p class="experience-company">Bajaj Auto Ltd • 07/2014 - 08/2018 • Pune, India</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <ul class="experience-list">
+                                <li>Probabilistic mathematical modeling of auto components</li>
+                                <li>Vehicle suspension system behavior prediction (50% faster process)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="card experience-card">
+                        <div class="card-header">
+                            <div style="display: flex; align-items: center;">
+                                <svg class="icon" style="color: var(--color-indigo-600); margin-right: var(--spacing-3);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z M12 14l-6.16-3.422A12.083 12.083 0 005.175 4.1 11.952 11.952 0 0012 1.945 11.952 11.952 0 0018.826 4.1a12.083 12.083 0 00-.665 6.479L12 14z"></path>
+                                </svg>
+                                <div>
+                                    <h3 class="experience-title">Bachelor of Technology</h3>
+                                    <p class="experience-company">National Institute of Technology, Jaipur • 06/2010 - 05/2014 • CGPA: 7.9</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container" style="max-width: 64rem; text-align: center;">
+                <h2 class="section-title">Let's Build the Future of AI Together</h2>
+                <p class="section-subtitle" style="margin-bottom: var(--spacing-12);">
+                    Ready to transform your business with cutting-edge AI solutions? Let's discuss your next project.
+                </p>
+
+                <div class="card">
+                    <div class="card-content" style="padding: var(--spacing-8);">
+                        <div class="contact-grid">
+                            <div class="contact-item">
+                                <div class="icon-circle icon-gradient-blue">
+                                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <h3 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: var(--spacing-2);">Email</h3>
+                                <a href="mailto:raviraj.prajapat@yahoo.in" class="contact-link">
+                                    raviraj.prajapat@yahoo.in
+                                </a>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-circle icon-gradient-green">
+                                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                    </svg>
+                                </div>
+                                <h3 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: var(--spacing-2);">Phone</h3>
+                                <a href="tel:+919665801710" class="contact-link green">
+                                    +91-9665801710
+                                </a>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-circle icon-gradient-purple">
+                                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                    </svg>
+                                </div>
+                                <h3 style="font-weight: 600; color: var(--color-slate-800); margin-bottom: var(--spacing-2);">GitHub</h3>
+                                <a href="http://github.com/rrajp" target="_blank" rel="noopener noreferrer" class="contact-link purple">
+                                    github.com/rrajp
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+
+                        <div class="location">
+                            <svg style="width: 1.25rem; height: 1.25rem; margin-right: var(--spacing-2);" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Gurugram, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    © 2025 Raviraj Prajapat. Transforming businesses through innovative AI solutions.
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Initialize animations and interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set hero content as visible (replaces React state)
+            const heroContent = document.querySelector('.hero-content');
+            if (heroContent) {
+                setTimeout(() => {
+                    heroContent.style.opacity = '1';
+                    heroContent.style.transform = 'translateY(0)';
+                }, 100);
+            }
+
+            // Add click event listeners for smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    scrollToSection(targetId);
+                });
+            });
+
+            // Add hover effects for cards
+            document.querySelectorAll('.card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-0.25rem)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Add hover effects for buttons
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-1px)';
+                });
+                
+                btn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+
+            // Add hover effects for skill badges
+            document.querySelectorAll('.skill-badge').forEach(badge => {
+                badge.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                });
+                
+                badge.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+
+            // Intersection Observer for fade-in animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe sections for animations
+            document.querySelectorAll('.section').forEach(section => {
+                if (section.id !== 'hero') {
+                    section.style.opacity = '0';
+                    section.style.transform = 'translateY(2rem)';
+                    section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                    observer.observe(section);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
